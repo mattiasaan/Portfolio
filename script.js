@@ -95,7 +95,7 @@ worksContainer.addEventListener("mouseleave", () => {
 
 
 
-function copiaEmail() {
+function copyEmail() {
   let email = "your.email@example.com";
   let tempInput = document.createElement("input");
   document.body.appendChild(tempInput);
@@ -104,21 +104,21 @@ function copiaEmail() {
   document.execCommand("copy");
   document.body.removeChild(tempInput);
 
-  mostraPopup();
+  showPopup();
 }
 
-function mostraPopup() {
+function showPopup() {
   let popup = document.getElementById("popup");
   popup.style.display = "block";
 }
 
-function chiudiPopup() {
+function closePopup() {
   let popup = document.getElementById("popup");
   popup.style.display = "none";
 }
 
-function apriGmail() {
+function openGmail() {
   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=your.email@example.com", "_blank");
-  chiudiPopup();
+  closePopup();
 }
 

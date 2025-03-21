@@ -1,4 +1,7 @@
-/* Font Definitions */
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "title-font";
   src: url("./Fonts/MBFModernRebel.ttf") format("truetype");
@@ -308,12 +311,10 @@ body {
   background-color: #862200;
 }
 
-/*footer*/
 .footer {
-  background: #0a0a0a;
   color: rgb(241, 238, 215);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   backdrop-filter: blur(10px);
   position: relative;
   bottom: 0;
