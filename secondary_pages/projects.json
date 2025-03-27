@@ -1,0 +1,27 @@
+[
+  {
+    "id": "grademate",
+    "title": "Grademate",
+    "description": "An app to save and manage your grades and calculate your average during the school year"
+  },
+  {
+    "id": "terralink",
+    "title": "Terralink",
+    "description": "An app designed for the citizens of Bolzano that allows them to have all the services at their fingertips"
+  },
+  {
+    "id": "linker",
+    "title": "Linker",
+    "description": "An app to save and organize your links easily"
+  },
+  {
+    "id": "trackmate",
+    "title": "Trackmate",
+    "description": "An app to view, save and categorize your GPX tracks"
+  },
+  {
+    "id": "absence-screen",
+    "title": "Absence Screen",
+    "description": "A data management infrastructure used to manage teacher absences via a mobile app and a web dashboard"
+  }
+]

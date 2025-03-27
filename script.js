@@ -122,3 +122,15 @@ function openGmail() {
   closePopup();
 }
 
+
+//per works
+document.addEventListener("DOMContentLoaded", () => {
+  const projectLinks = document.querySelectorAll(".works");
+
+  projectLinks.forEach(link => {
+      const projectId = link.dataset.id;
+      if (projectId) {
+          link.href = `secondary_pages/works.html?id=${projectId}`;
+      }
+  });
+});
