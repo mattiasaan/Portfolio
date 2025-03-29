@@ -2,7 +2,8 @@
   {
     "id": "grademate",
     "title": "Grademate",
-    "description": "An app to save and manage your grades and calculate your average during the school year"
+    "description": "An app to save and manage your grades and calculate your average during the school year</br></br>This app was developed to solve the problem of removing averages from the school's electronic register",
+    "image": "./works_images/grademate.png"
   },
   {
     "id": "terralink",
