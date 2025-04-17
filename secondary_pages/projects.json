@@ -8,21 +8,23 @@
   {
     "id": "terralink",
     "title": "Terralink",
-    "description": "An app designed for the citizens of Bolzano that allows them to have all the services at their fingertips"
+    "description": "An app designed for the citizens of Bolzano that allows them to have all the services at their fingertips</br></br>This app was developed to compete in the price Fabrizzio Rocca 2024 in which we arrived 4",
+    "image": "./works_images/terra.png"
   },
   {
     "id": "linker",
     "title": "Linker",
-    "description": "An app to save and organize your links easily"
+    "description": "An app to save and organize your links easily</br></br>This is one of my first React native project and recently got an update that made it look and function better",
+    "image": "./works_images/linker.png"
   },
   {
     "id": "trackmate",
     "title": "Trackmate",
-    "description": "An app to view, save and categorize your GPX tracks"
+    "description": "An app to view, save and categorize your GPX tracks</br></br>"
   },
   {
     "id": "absence-screen",
     "title": "Absence Screen",
-    "description": "A data management infrastructure used to manage teacher absences via a mobile app and a web dashboard"
+    "description": "A teacher absence management system built on an SQL-based data infrastructure</br></br>The system includes a web dashboard for administration and absence monitoring</br></br>as well as a mobile app for teachers to input and view their absences in real-time "
   }
 ]

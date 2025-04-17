@@ -3,13 +3,13 @@ const params = new URLSearchParams(window.location.search);
 const projectId = params.get("id");
 
 if (!projectId) {
-    document.body.innerHTML = "<h1>Progetto non trovato</h1>";
+    document.body.innerHTML = "<h1>Project not found</h1>";
     return;
 }
 
 fetch("projects.json")
     .then(response => {
-        if (!response.ok) throw new Error("Errore nel caricamento dei dati");
+        if (!response.ok) throw new Error("Error during data loading");
         return response.json();
     })
     .then(data => {
@@ -23,8 +23,8 @@ fetch("projects.json")
             document.getElementById("project-download").href = project.download;
             
         } else {
-            document.body.innerHTML = "<h1>Progetto non trovato</h1>";
+            document.body.innerHTML = "<h1>Project not found</h1>";
         }
     })
-    .catch(error => console.error("Errore nel caricamento dei dettagli del progetto:", error));
+    .catch(error => console.error("Error loading project details:", error));
 });
