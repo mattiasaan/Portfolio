@@ -134,3 +134,44 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+
+
+//render skills
+const skills = [
+  { name: "HTML 5 - CSS", img: "Images/HTML 5 -CSS logo.png", alt: "html-css" },
+  { name: "Javascript", img: "Images/javascript logo.png", alt: "js" },
+  { name: "React native", img: "Images/react native logo.png", alt: "Rn" },
+  { name: "Figma design", img: "Images/figma_logo.png", alt: "Figma" },
+  { name: "Algorithms", img: "Images/algoritmo.png", alt: "alg" },
+  { name: "C++", img: "Images/cpp_logo.png", alt: "cpp" },
+  { name: "Unreal engine", img: "Images/unreal-engine-logo.png", alt: "unreal-engine" },
+  { name: "Python", img: "Images/python logo.png", alt: "py" },
+  { name: "SQL database", img: "Images/SQL_logo.png", alt: "sql" },
+  { name: "Git bash", img: "Images/git-logo.png", alt: "git" }
+];
+
+
+function renderSkills(skills, perRow = 5) {
+  const container = document.getElementById("skills-container");
+
+  for (let i = 0; i < skills.length; i += perRow) {
+    const row = document.createElement("tr");
+    skills.slice(i, i + perRow).forEach(skill => {
+      const td = document.createElement("td");
+      td.innerHTML = `
+        <div class="card">
+          <div class="card-front">
+            <img src="${skill.img}" alt="${skill.alt}" class="img-card">
+          </div>
+          <div class="card-back">
+            <h3>${skill.name}</h3>
+          </div>
+        </div>
+      `;
+      row.appendChild(td);
+    });
+    container.appendChild(row);
+  }
+}
+
+renderSkills(skills)

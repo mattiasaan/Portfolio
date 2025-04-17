@@ -78,11 +78,15 @@ body {
 .button-start:hover {
   cursor: pointer;
   transition: all 0.3s ease-in;
-  padding: 0 40px;
+  transform: translate(-0.25rem, -0.25rem);
 }
 
 .cv-button-2 {
   transform: scaleX(-1);
+}
+
+.cv-button-2:hover {
+  transform: scaleX(-1) translate(-0.25rem, -0.25rem);
 }
 
 .cv-button-2-span {

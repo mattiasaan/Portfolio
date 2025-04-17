@@ -6,7 +6,8 @@
     <meta name="description" content="The portfolio website of Mattia Santomaso">
     <title>Santomaso Mattia</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" href="/Images/favicon.png" type="image/png">
+
     <script src="script.js" defer></script>
 </head>
 
@@ -22,9 +23,10 @@
                 </a>
 
                 <a href="#contacts">
-                    <button class="button-start" style=" transform: scaleX(-1);"><span class="cv-button-2-span">Contact me</span></button>
+                    <button class="button-start cv-button-2">
+                        <span class="cv-button-2-span">Contact me</span>
+                    </button>
                 </a>
-                
             </td>
         </tr>
     </table>
@@ -47,110 +49,7 @@
     <h2 class="section">Skills</h2>
 
     <table class="skills-tb">
-        <tr>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/HTML 5 -CSS logo.png" alt="html-css" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>HTML 5 - CSS</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/javascript logo.png" alt="js" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Javascript</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/react native logo.png" alt="Rn" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>React native</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/figma_logo.png" alt="Figma" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Figma design</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/algoritmo.png" alt="alg" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Algorithms</h3>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/cpp_logo.png" alt="cpp" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>C++</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/unreal-engine-logo.png" alt="unreal-engine" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Unreal engine</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/python logo.png" alt="py" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Python</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/SQL_logo.png" alt="sql" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>SQL database</h3>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <div class="card-front">
-                        <img src="Images/git-logo.png" alt="git" class="img-card">
-                    </div>
-                    <div class="card-back">
-                        <h3>Git bash</h3>
-                    </div>
-                </div>
-            </td>
-        </tr>
+        <tbody id="skills-container"></tbody>
     </table>
 
     <h2 class="section" id="contacts">Contacts</h2>

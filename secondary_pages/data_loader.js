@@ -19,8 +19,12 @@ fetch("projects.json")
             document.getElementById("project-title").textContent = project.title;
             document.getElementById("project-description").innerHTML = project.description;
             document.getElementById("project-image").src = project.image;
-            document.getElementById("project-github").href = project.github;
-            document.getElementById("project-download").href = project.download;
+            document.getElementById("project-github").addEventListener("click", () => {
+                window.open(project.github, "_blank");
+            });
+            document.getElementById("project-download").addEventListener("click", () => {
+                window.open(project.download, "_blank");
+            });
             
         } else {
             document.body.innerHTML = "<h1>Project not found</h1>";
