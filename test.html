@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 140px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 45px rgba(0, 0, 0, 0.5);
+    }
+
+    .card svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+      margin-bottom: 10px;
+    }
+
+    .second-text {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards">
+    <div class="card">
+      <!-- GitHub Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+        <path d="M165.9 397.4c0 2-2.3 3.6...Z" />
+      </svg>
+      <p class="second-text">Github</p>
+    </div>
+    <div class="card">
+      <!-- Email Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M48 64C21.5 64 0 85.5...Z" />
+      </svg>
+      <p class="second-text">E-mail</p>
+    </div>
+    <div class="card">
+      <!-- LinkedIn Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M416 32H31.9C14.3 32 0 46.5...Z" />
+      </svg>
+      <p class="second-text">LinkedIn</p>
+    </div>
+  </div>
+</body>
+</html>

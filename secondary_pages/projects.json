@@ -27,12 +27,14 @@
     "id": "trackmate",
     "title": "Trackmate",
     "description": "An app to view, save and categorize your GPX tracks</br></br>",
+    "image": "./works_images/workInProgress.png",
     "github": "https://github.com/mattiasaan/trackmate",
     "download": "https://www.google.it/?hl=it&zx=1744895060538&no_sw_cr=1"
   },
   {
     "id": "absence-screen",
     "title": "Absence Screen",
-    "description": "A teacher absence management system built on an SQL-based data infrastructure</br></br>The system includes a web dashboard for administration and absence monitoring</br></br>as well as a mobile app for teachers to input and view their absences in real-time "
+    "description": "A teacher absence management system built on an SQL-based data infrastructure</br></br>The system includes a web dashboard for administration and absence monitoring</br></br>as well as a mobile app for teachers to input and view their absences in real-time ",
+    "image": "./works_images/workInProgress.png"
   }
 ]
