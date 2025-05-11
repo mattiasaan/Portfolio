@@ -294,9 +294,9 @@ body {
 .contact-cards {
   display: flex;
   gap: 20px;
-  justify-content: center; /* Centra le card orizzontalmente */
-  align-items: flex-start; /* Allinea le card all'inizio del contenitore */
-  flex-wrap: wrap; /* Aggiungi questa proprietà se vuoi che le card si disponano su più righe se necessario */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .contact-card {
@@ -309,14 +309,14 @@ body {
   padding: 30px;
   text-align: center;
   width: 140px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Aggiungi un effetto di background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   color: #fff;
 }
 
 .contact-card:hover {
-  transform: translateY(-12px); /* Aumenta l'effetto di sollevamento */
-  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.5); /* Aumenta l'intensità dell'ombra */
-  background: rgba(255, 255, 255, 0.1); /* Aggiungi una sfumatura di colore sul background */
+  transform: translateY(-12px);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .contact-card svg {
@@ -324,11 +324,11 @@ body {
   height: 40px;
   fill: white;
   margin-bottom: 10px;
-  transition: transform 0.3s ease; /* Aggiungi una transizione per l'animazione */
+  transition: transform 0.3s ease;
 }
 
 .card:hover svg {
-  transform: scale(1.2); /* Ingrandisci l'icona al passaggio del mouse */
+  transform: scale(1.2);
 }
 
 .second-text {
@@ -349,7 +349,7 @@ body {
   padding-bottom: 8px;
   text-align: center;
   width: 140px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Aggiungi un effetto di background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   color: #00ff37;
 }
 
