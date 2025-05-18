@@ -150,28 +150,21 @@ const skills = [
   { name: "Git bash", img: "Images/git-logo.png", alt: "git" }
 ];
 
-
-function renderSkills(skills, perRow = 5) {
+function renderSkills(skills) {
   const container = document.getElementById("skills-container");
-
-  for (let i = 0; i < skills.length; i += perRow) {
-    const row = document.createElement("tr");
-    skills.slice(i, i + perRow).forEach(skill => {
-      const td = document.createElement("td");
-      td.innerHTML = `
-        <div class="card">
-          <div class="card-front">
-            <img src="${skill.img}" alt="${skill.alt}" class="img-card">
-          </div>
-          <div class="card-back">
-            <h3>${skill.name}</h3>
-          </div>
-        </div>
-      `;
-      row.appendChild(td);
-    });
-    container.appendChild(row);
-  }
+  skills.forEach(skill => {
+    const cardWrapper = document.createElement("div");
+    cardWrapper.classList.add("card");
+    cardWrapper.innerHTML = `
+      <div class="card-front">
+        <img src="${skill.img}" alt="${skill.alt}" class="img-card">
+      </div>
+      <div class="card-back">
+        <h3>${skill.name}</h3>
+      </div>
+    `;
+    container.appendChild(cardWrapper);
+  });
 }
 
 renderSkills(skills)

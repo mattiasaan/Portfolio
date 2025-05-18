@@ -12,24 +12,21 @@
 </head>
 
 <body>
-    <table class="title-table">
-        <tr>
-            <td>
-                <h1 class="title">Santomaso<br>Mattia</h1>
-            </td>
-            <td>
-                <a href="./files/CV Santomaso.pdf" download="CV Santomaso">
-                    <button class="button-start" data-tooltip="Click to download my CV">Download CV</button>
-                </a>
+    <div class="title-wrapper">
+        <h1 class="title">Santomaso<br>Mattia</h1>
 
-                <a href="#contacts">
-                    <button class="button-start cv-button-2">
-                        <span class="cv-button-2-span">Contact me</span>
-                    </button>
-                </a>
-            </td>
-        </tr>
-    </table>
+        <div class="button-group">
+            <a href="./files/CV Santomaso.pdf" download="CV Santomaso">
+                <button class="button-start" data-tooltip="Click to download my CV">Download CV</button>
+            </a>
+            <a href="#contacts">
+                <button class="button-start cv-button-2">
+                <span class="cv-button-2-span">Contact me</span>
+                </button>
+            </a>
+        </div>
+    </div>
+
 
     <h2 class="section">Recent works</h2>
 
@@ -48,16 +45,13 @@
 
     <h2 class="section">Skills</h2>
 
-    <table class="skills-tb">
-        <tbody id="skills-container"></tbody>
-    </table>
+    <div id="skills-container" class="skills-grid"></div>
 
     <h2 class="section" id="contacts">Contacts</h2>
 
     <div class="contact-cards">
         <h3 class="card-open-work">Open for work</h3>
     </div>
-    
 
     <div class="contact-cards">
         <a href="https://github.com/mattiasaan" target="_blank">
