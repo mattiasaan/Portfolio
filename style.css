@@ -236,6 +236,13 @@ body {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  #hoverCard {
+    display: none !important;
+  }
+}
+
+
 /*card delle skills*/
 .skills-grid {
   display: grid;
@@ -380,8 +387,8 @@ body {
 
 .contact-card {
   flex: 0 1 140px;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -425,7 +432,7 @@ body {
 
 .card-open-work {
   flex: 1 1 100%;
-  max-width: 490px;
+  max-width: 380px;
   height: 50px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;

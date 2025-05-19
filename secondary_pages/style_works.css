@@ -40,7 +40,7 @@ body {
   margin-left: 20%;
 }
 
-/* From Uiverse.io by Creatlydev */ 
+/* From Uiverse.io by Creatlydev */
 .btn-github {
   cursor: pointer;
   display: flex;
@@ -57,17 +57,124 @@ body {
   line-height: 1rem;
 
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow:
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
     inset 0 0 0 2px rgba(255, 255, 255, 0.08);
   color: #fff;
 }
 
 .btn-github:hover {
-  box-shadow:
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.09),
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.09),
     inset 0 0 0 1px rgba(252, 232, 3, 0.09);
   color: #f66435;
   transform: translate(0, -0.25rem);
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.project-details {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.project-image-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_images {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.work_title {
+  font-family: works-font;
+  font-size: 3rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.back-button-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.btn-back {
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  color: #f66435;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(252, 232, 3, 0.09);
+  transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 768px) {
+  .work_title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .btn-github {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .work_title {
+    font-size: 1.8rem;
+  }
+
+  .display_images {
+    max-width: 90%;
+  }
 }

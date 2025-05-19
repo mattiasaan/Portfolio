@@ -118,7 +118,7 @@ function closePopup() {
 }
 
 function openGmail() {
-  window.open("https://mail.google.com/mail/?view=cm&fs=1&to=your.email@example.com", "_blank");
+  window.open("https://mail.google.com/mail/?view=cm&fs=1&to=mattiasan0408@gmail.com", "_blank");
   closePopup();
 }
 
