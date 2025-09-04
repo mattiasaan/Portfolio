@@ -1,0 +1,23 @@
+[
+{
+  "name": "Grademate",
+  "description": "GradeMate is a React Native mobile application designed to help students track their school grades. It provides an easy and secure way to save grades locally on your device and automatically calculates averages based on the specific weighting rules used by the Galileo Galilei school.",
+  "technologies": ["React Native", "JavaScript"]
+},
+{
+  "name": "LANdesk",
+  "description": "LANdesk is a self-hosted, local-first dashboard for managing personal productivity. It provides a clean interface to organize tasks, notes, and files, all running on your own machine or local network.",
+  "state": "new",
+  "technologies": ["HTML", "CSS", "JavaScript", "PWA", "python", "FastAPI"]
+},
+{
+  "name": "TerraLink",
+  "description": "TerraLink is a React Native mobile app that guides residents and tourists in Bolzano with real-time info on weather, transport, healthcare, and interactive maps.",
+  "technologies": ["React Native", "JavaScript"]
+},
+{
+  "name": "Portfolio Website",
+  "description": "My personal portfolio website to showcase my projects, skills, and experience.",
+  "technologies": ["HTML", "CSS", "JavaScript"]
+}
+]

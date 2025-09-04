@@ -1,97 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The portfolio website of Mattia Santomaso">
-    <title>Santomaso Mattia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/Images/favicon.png" type="image/png">
-
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mattia Santomaso</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css"
+    />
     <script src="script.js" defer></script>
-</head>
+  </head>
+  <body>
+    <div class="title-container">
+      <div class="title-text">
+        <h1 class="title">Hi, I'm <span class="span-title">Mattia</span></h1>
+        <h2 class="title-sub">Full-Stack Dev</h2>
+      </div>
+      <div class="location">
+        <img src="./images/bz map.png" alt="bz map" class="location-img" />
 
-<body>
-    <div class="title-wrapper">
-        <h1 class="title">Santomaso<br>Mattia</h1>
+        <h5 class="location-title">
+          <svg
+            fill="#FF3D00"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 200"
+            width="12px"
+            height="12px"
+          >
+            <path d="M105.539,197.184c-1.29,1.77-3.349,2.816-5.539,2.816 c-2.191,0-4.249-1.047-5.539-2.817l-55.964-76.807 c-9.428-13.026-14.404-28.398-14.404-44.47 C24.093,34.051,58.145,0,100,0s75.907,34.051,75.907,75.906 c0,16.087-4.971,31.46-14.375,44.455L105.539,197.184z 
+                    M100,12.734c-34.834,0-63.174,28.339-63.174,63.172 c0,13.373,4.141,26.163,11.976,36.987l51.199,70.271 l51.228-70.284c7.81-10.793,11.945-23.583,11.945-36.973 C163.174,41.073,134.834,12.734,100,12.734z  M100,110.293c-18.96,0-34.386-15.425-34.386-34.387
+                    c0-18.959,15.426-34.385,34.386-34.385 c18.961,0,34.388,15.425,34.388,34.385 C134.388,94.868,118.961,110.293,100,110.293z  M100,54.255c-11.939,0-21.652,9.712-21.652,21.651 c0,11.94,9.713,21.654,21.652,21.654 c11.94,0,21.654-9.714,21.654-21.654 C121.654,63.967,111.94,54.255,100,54.255z"
+            />
+          </svg>
+          Based in Bolzano, IT
+        </h5>
+      </div>
+    </div>
+    <section class="about me">
+      <p class="about-text">
+        I'm a Computer Science student with a passion for programming and
+        making. Currently exploring web, mobile, and hardware projects, while
+        continuously building my skills in modern technologies.
+      </p>
+    </section>
+    <div class="buttons-container">
+      <a class="download-btn" href="./files/CV Santomaso.pdf" download>
+        <svg
+          height="42"
+          width="40"
+          viewBox="0 0 24 24"
+          class="document-download_svg__h-6 document-download_svg__w-6"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            stroke-width="1.8px"
+            fill="none"
+            stroke="currentColor"
+            d="M12 10v6m0 0-3-3m3 3 3-3m2 8H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          ></path>
+        </svg>
+        <span class="texts">
+          <span class="text-2">CV</span>
+          <span class="text-1">Download</span>
+        </span>
+      </a>
 
-        <div class="button-group">
-            <a href="./files/CV Santomaso.pdf" download="CV Santomaso">
-                <button class="button-start" data-tooltip="Click to download my CV">Download CV</button>
-            </a>
-            <a href="#contacts">
-                <button class="button-start cv-button-2">
-                <span class="cv-button-2-span">Contact me</span>
-                </button>
-            </a>
+      <a class="download-btn" href="#contact">
+        <svg
+          height="42"
+          width="40"
+          viewBox="1.55 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+              stroke="currentColor"
+              stroke-width="1.44"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+              stroke="currentColor"
+              stroke-width="1.44"
+              stroke-linecap="round"
+            ></rect>
+          </g>
+        </svg>
+
+        <span class="texts">
+          <span class="text-2">Get In Touch</span>
+          <span class="text-1">contact page</span>
+        </span>
+      </a>
+    </div>
+
+    <section class="skills">
+      <h3 class="section-title">Knowledge Areas</h3>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="projects">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section id="contact">
+      <h3 class="section-title">Get in touch</h3>
+
+      <div class="contact-content">
+        <!-- Email -->
+        <div class="contact-item email-item">
+          <p>Feel free to reach me via email:</p>
+          <div class="email-row">
+            <span id="email-text">mattia.san0408@gmail.com</span>
+            <button id="copy-email">Copy</button>
+          </div>
         </div>
-    </div>
 
-
-    <h2 class="section">Recent works</h2>
-
-    <div id="hoverCard" class="hover-card">
-        <h3 id="cardTitle"></h3>
-        <p id="cardDescription"></p>
-    </div>
-    
-    <div class="works-container">
-        <a href="./secondary_pages/works.html" class="works" data-id="grademate" data-title="Grademate" data-description="An app to save and manage your grades and calculate your average during the school year">Grademate</a>
-        <a href="#" class="works" data-id="terralink" data-title="Terralink" data-description="An app designed for the citizens of Bolzano that allows them to have all the services at their fingertips">Terralink</a>
-        <a href="#" class="works" data-id="linker" data-title="Linker" data-description="An app to save and organize your links easily">Linker</a>
-        <a href="#" class="works" data-id="trackmate" data-title="Trackmate" data-description="An app to view, save and categorize your GPX tracks">Trackmate</a>
-        <a href="#" class="works" data-id="absence-screen" data-title="Absence Screen" data-description="A teacher absence management system built on an SQL-based data infrastructure">Absence<br>Screen</a>
-    </div>
-
-    <h2 class="section">Skills</h2>
-
-    <div id="skills-container" class="skills-grid"></div>
-
-    <h2 class="section" id="contacts">Contacts</h2>
-
-    <div class="contact-cards">
-        <h3 class="card-open-work">Open for work</h3>
-    </div>
-
-    <div class="contact-cards">
-        <a href="https://github.com/mattiasaan" target="_blank">
-            <div class="contact-card">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="1em">
-                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                </svg>
-                <p class="second-text">Github</p>
+        <!-- GitHub -->
+        <div class="contact-item">
+          <p>
+            GitHub:
+            <a href="https://github.com/mattiasaan" target="_blank" class="link"
+              >@mattiasaan</a
+            >
+          </p>
         </div>
-        </a>
 
-        <a onclick="copyEmail()">
-            <div class="contact-card">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em">
-                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-                </svg>
-                <p class="second-text">E-mail</p>
-            </div>
-        </a>
-
-        <div id="popup" class="popup">
-            <p>E-mail address copied!<br> Open gmail to contact me instantly</p>
-            <button onclick="openGmail()" class="popup-button">Open Gmail</button>
-            <button onclick="closePopup()" class="popup-button">Close</button>
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <p>
+            LinkedIn:
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="link"
+              >coming soon lol</a
+            >
+          </p>
         </div>
-        <!--
-        <a href="https://www.linkedin.com" target="_blank">
-            <div class="contact-card">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em">
-                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                </svg>
-                <p class="second-text">LinkedIn</p>
-            </div>
-        </a>
-    -->
-    </div>
-    
-    <footer class="footer">
-        <p>© 2025 Santomaso Mattia | All rights reserved.</p>
+      </div>
+    </section>
+    <footer>
+      <p>
+        created with ♡ by me<br />© 2025 Mattia Santomaso. All rights reserved.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
-
