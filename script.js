@@ -1,3 +1,13 @@
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((reg) => console.log("SW registrato:", reg))
+      .catch((err) => console.error("SW fallito:", err));
+  });
+}
+
+
 fetch("skills.json")
   .then((res) => res.json())
   .then((skills) => {
@@ -31,12 +41,14 @@ fetch("projects.json")
 
     // funzione helper per renderizzare un progetto
     const renderProject = (project) => `
+    <a href="${project.repository}" target="_blank" class="project-link">
       <h4 class="project-title">
         ${project.name}
         ${project.state === "new" ? '<span class="project-badge">NEW</span>' : ""}
       </h4>
       <p class="project-desc">${project.description}</p>
       ${renderTechnologies(project.technologies)}
+    </a>
     `;
 
     //1
