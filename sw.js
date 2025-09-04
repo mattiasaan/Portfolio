@@ -1,18 +1,18 @@
 const CACHE_NAME = "Portfolio-cache-v1";
 const ASSETS_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/projects.json",
-  "/skills.json",
-  "/script.js",
-  "/style.css",
-  "/sw.js",
-  "/files/CV Santomaso.pdf",
-  "/images/bz map.png",
-  "/images/favicon.png",
-  "/images/icon-192.png",
-  "/images/icon-512.png"
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./projects.json",
+  "./skills.json",
+  "./script.js",
+  "./style.css",
+  "./sw.js",
+  "./files/CV Santomaso.pdf",
+  "./images/bz map.png",
+  "./images/favicon.png",
+  "./images/icon-192.png",
+  "./images/icon-512.png"
 ];
 
 self.addEventListener("install", (event) => {

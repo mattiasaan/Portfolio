@@ -2,7 +2,7 @@
   "name": "Portfolio of Mattia S.",
   "short_name": "Portfolio",
   "description": "Portfolio website of Mattia S., showcasing projects and skills.",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0e0e10",
   "theme_color": "#1a1b1e",
