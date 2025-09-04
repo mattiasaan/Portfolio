@@ -416,6 +416,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 150px 20px 20px 20px;
+    margin-top: 0px;
   }
 
   .title-text h1.title { font-size: 3.5em; }
@@ -434,8 +435,8 @@ footer {
 @media (max-width: 768px) {
   body { padding: 0 15px; }
 
-  .title-text h1.title { font-size: 2.8em; }
-  .title-text h2.title-sub { font-size: 2em; }
+  .title-text h1.title { font-size: 3.5em; }
+  .title-text h2.title-sub { font-size: 2.5em; }
 
   .projects-grid {
     grid-template-columns: 1fr;
@@ -452,6 +453,6 @@ footer {
 /* MOBILE SMALL */
 @media (max-width: 480px) {
   .email-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-  .title-text h1.title { font-size: 2.2em; }
-  .title-text h2.title-sub { font-size: 1.5em; }
+  .title-text h1.title { font-size: 2.8em; }
+  .title-text h2.title-sub { font-size: 2em; }
 }
