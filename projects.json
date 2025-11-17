@@ -2,14 +2,14 @@
 {
   "name": "LANdesk",
   "description": "LANdesk is a self-hosted, local-first dashboard for managing personal productivity. It provides a clean interface to organize tasks, notes, and files, all running on your own machine or local network.",
-  "state": "new",
   "technologies": ["HTML", "CSS", "JavaScript", "PWA", "python", "FastAPI"],
   "repository": "https://github.com/mattiasaan/LANdesk"
 },
 {
   "name": "MoveGreen",
   "description": "MoveGreen is a comprehensive mobile application designed to promote sustainable mobility. It empowers users to track their environmentally friendly activities, such as walking, biking, and using public transport, while visualizing their positive impact through CO₂ savings and a rewarding points system.",
-  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render"],
+  "state": "new",
+  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render", "Figma"],
   "repository": "https://github.com/mattiasaan/MoveGreen"
 },
 {
