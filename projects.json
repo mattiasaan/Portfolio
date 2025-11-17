@@ -1,11 +1,5 @@
 [
 {
-  "name": "Grademate",
-  "description": "GradeMate is a React Native mobile application designed to help students track their school grades. It provides an easy and secure way to save grades locally on your device and automatically calculates averages based on the specific weighting rules used by the Galileo Galilei school.",
-  "technologies": ["React Native", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/GradeMate"
-},
-{
   "name": "LANdesk",
   "description": "LANdesk is a self-hosted, local-first dashboard for managing personal productivity. It provides a clean interface to organize tasks, notes, and files, all running on your own machine or local network.",
   "state": "new",
@@ -13,10 +7,16 @@
   "repository": "https://github.com/mattiasaan/LANdesk"
 },
 {
-  "name": "TerraLink",
-  "description": "TerraLink is a React Native mobile app that guides residents and tourists in Bolzano with real-time info on weather, transport, healthcare, and interactive maps.",
+  "name": "MoveGreen",
+  "description": "MoveGreen is a comprehensive mobile application designed to promote sustainable mobility. It empowers users to track their environmentally friendly activities, such as walking, biking, and using public transport, while visualizing their positive impact through CO₂ savings and a rewarding points system.",
+  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render"],
+  "repository": "https://github.com/mattiasaan/MoveGreen"
+},
+{
+  "name": "Grademate",
+  "description": "GradeMate is a React Native mobile application designed to help students track their school grades. It provides an easy and secure way to save grades locally on your device and automatically calculates averages based on the specific weighting rules used by the Galileo Galilei school.",
   "technologies": ["React Native", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/TerraLink"
+  "repository": "https://github.com/mattiasaan/GradeMate"
 },
 {
   "name": "Portfolio Website",
