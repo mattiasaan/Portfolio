@@ -1,0 +1,27 @@
+[
+{
+  "name": "LANdesk",
+  "description": "LANdesk è una dashboard self-hosted e local-first per gestire la produttività personale. Offre un'interfaccia pulita per organizzare attività, note e file, il tutto eseguibile sul proprio computer o rete locale.",
+  "technologies": ["HTML", "CSS", "JavaScript", "PWA", "python", "FastAPI"],
+  "repository": "https://github.com/mattiasaan/LANdesk"
+},
+{
+  "name": "MoveGreen",
+  "description": "MoveGreen è un'app mobile completa progettata per promuovere la mobilità sostenibile. Permette agli utenti di monitorare attività ecologiche come camminare, andare in bicicletta o usare i mezzi pubblici, visualizzando il loro impatto positivo tramite il risparmio di CO₂ e un sistema di punti. </br></br> Con questa app ho partecipato al Premio Fabrizio Rocca 2025 e vinto il 1° premio",
+  "state": "new",
+  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render", "Figma"],
+  "repository": "https://github.com/mattiasaan/MoveGreen"
+},
+{
+  "name": "Grademate",
+  "description": "GradeMate è un'app mobile React Native pensata per aiutare gli studenti a monitorare i voti scolastici. Consente di salvare i voti localmente sul dispositivo e calcola automaticamente le medie in base alle regole di ponderazione della scuola Galileo Galilei.",
+  "technologies": ["React Native", "JavaScript"],
+  "repository": "https://github.com/mattiasaan/GradeMate"
+},
+{
+  "name": "Portfolio Website",
+  "description": "Il mio sito portfolio personale per mostrare progetti, competenze ed esperienza.",
+  "technologies": ["HTML", "CSS", "JavaScript"],
+  "repository": "https://github.com/mattiasaan/Portfolio"
+}
+]

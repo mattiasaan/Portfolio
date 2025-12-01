@@ -25,7 +25,7 @@ body {
 
 /* ----------------------- TITLE SECTION----------------------- */
 .title-container {
-  padding: 200px 20px 50px 20px;
+  padding: 180px 20px 50px 20px;
   margin-top: 50px;
 }
 
@@ -211,6 +211,27 @@ h3.section-title {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.8s;
+  text-decoration: none;
+}
+
+.language-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.language-btn svg {
+  vertical-align: middle;
 }
 
 /* ----------------------- PROJECTS GRID ----------------------- */
