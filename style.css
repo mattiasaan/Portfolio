@@ -259,6 +259,43 @@ h3.section-title {
   gap: 1.5rem;
 }
 
+.project-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-more-btn {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  /*
+  border: 0.05rem solid var(--color-accent);
+  
+  */
+  border-radius: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.see-more-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.projects-extra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .projects-extra {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ----------------------- PROJECT CARD ----------------------- */
 .project-card {
   position: relative;

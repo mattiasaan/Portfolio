@@ -19,8 +19,20 @@
   "repository": "https://github.com/mattiasaan/GradeMate"
 },
 {
+  "name": "Robocup tournament robot",
+  "description": "A hardware and software project developed with my team for the RoboCup Rescue Line national tournament, where in 2024 we earned 7th place out of more than 60 teams nationwide.",
+  "technologies": ["python", "opencv", "micropython", "arduino", "raspberryPI", "c++"],
+  "repository": "https://junior.robocup.org/rcj-rescue-line/"
+},
+{
+  "name": "FantaTerrorism",
+  "description": "A first-person multiplayer game developed in a low-poly art style using Unreal Engine. The project is currently in development and focuses on core gameplay mechanics and multiplayer features.",
+  "technologies": ["Unreal Engine", "c++"],
+  "repository": "https://www.unrealengine.com/en-US"
+},
+{
   "name": "Portfolio Website",
-  "description": "My personal portfolio website to showcase my projects, skills, and experience.",
+  "description": "A personal portfolio website developed to highlight my projects, technical skills, and overall experience through a clean and modern design.",
   "technologies": ["HTML", "CSS", "JavaScript"],
   "repository": "https://github.com/mattiasaan/Portfolio"
 }
