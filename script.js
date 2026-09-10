@@ -8,21 +8,39 @@ if ("serviceWorker" in navigator) {
 }
 
 
+const SKILL_CATEGORIES = [
+  { key: "web-backend", title: "Core Web & Backend" },
+  { key: "iot-embedded", title: "IoT, Embedded & Robotics" },
+  { key: "mobile-game", title: "Mobile & Game Dev" },
+  { key: "systems-tools", title: "Systems, Tools & Workflow" },
+];
+
 fetch("skills.json")
   .then((res) => res.json())
   .then((skills) => {
     const container = document.getElementById("skills-grid");
-    skills.forEach((skill) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.innerHTML = `
-          <div class="card-icon">${skill.svg}</div>
-          <div class="card-content">
-            <h4>${skill.name}</h4>
-            <p>${skill.description}</p>
-          </div>
-        `;
-      container.appendChild(card);
+
+    const renderTag = (skill) => `
+      <div class="skill-tag" title="${skill.description}">
+        <span class="skill-tag-icon">${skill.svg}</span>
+        <span class="skill-tag-name">${skill.name}</span>
+      </div>
+    `;
+
+    SKILL_CATEGORIES.forEach((category) => {
+      const items = skills.filter((s) => s.category === category.key);
+      if (!items.length) return;
+
+      const group = document.createElement("div");
+      group.classList.add("skills-group");
+      group.innerHTML = `
+        <h4 class="skills-group-title">${category.title}</h4>
+        <div class="skills-tags">
+          ${items.map(renderTag).join("")}
+        </div>
+      `;
+
+      container.appendChild(group);
     });
   })
   .catch((err) => console.error("Err caricamento skills:", err));

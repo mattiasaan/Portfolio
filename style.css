@@ -111,58 +111,125 @@ h3.section-title {
 /* ----------------------- SKILLS GRID ----------------------- */
 .skills .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
   margin-top: 20px;
+  align-items: start;
 }
 
-.skills .card {
+.skills-group {
+  background-color: rgba(26, 27, 30, 0.35);
+  border: 1px solid rgba(237, 237, 237, 0.07);
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem;
+}
+
+.skills-group-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.skills-tags {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0.625rem;
-  border-radius: 1rem;
+  gap: 0.55rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 2rem;
   background-color: var(--color-secondary);
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.5s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+  cursor: default;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.skills .card:hover {
-  transform: scale(1.03);
-  background: linear-gradient(
-    167deg,
-    rgba(26, 27, 30, 1) 15%,
-    rgba(50, 53, 68, 1) 100%
-  );
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+.skill-tag:hover {
+  border-color: rgba(255, 61, 0, 0.35);
+  transform: translateY(-1px);
 }
 
-.skills .card-icon {
-  padding: 0.75rem;
-  background-color: var(--color-tertiary);
-  border-radius: 0.5rem;
+.skill-tag-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
-.skills .card-icon svg {
-  width: 25px;
-  height: 25px;
+.skill-tag-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
-.skills .card-content h4 {
-  font-size: 1.15em;
+.skill-tag-name {
+  font-size: 0.95em;
   font-weight: 500;
-  margin: 0;
   color: var(--color-text);
+  white-space: nowrap;
 }
 
-.skills .card-content p {
-  font-size: 0.8em;
-  color: rgba(237, 237, 237, 0.7);
-  margin: 0;
+/* Responsive: skills */
+@media (max-width: 1024px) {
+  .skills .skills-grid {
+    gap: 1rem;
+  }
+
+  .skill-tag-name {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .skills-group {
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-group {
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+  }
+
+  .skills-group-title {
+    font-size: 0.65em;
+    white-space: normal;
+  }
+
+  .skills-tags {
+    gap: 0.4rem;
+  }
+
+  .skill-tag {
+    padding: 0.4rem 0.7rem;
+    gap: 0.4rem;
+  }
+
+  .skill-tag-icon,
+  .skill-tag-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .skill-tag-name {
+    font-size: 0.85em;
+  }
 }
 
 /* ----------------------- DOWNLOAD cv btn ----------------------- */
