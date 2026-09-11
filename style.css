@@ -43,6 +43,7 @@ body {
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: nowrap;
 }
 
 h1.title {
@@ -572,6 +573,21 @@ footer {
 
   .title-text h1.title { font-size: 3.5em; }
   .title-text h2.title-sub { font-size: 2.5em; }
+
+  .buttons-container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .download-btn,
+  .language-btn {
+    padding: 0.6rem;
+  }
+
+  .buttons-container .texts {
+    display: none;
+  }
 
   .projects-grid {
     grid-template-columns: 1fr;
