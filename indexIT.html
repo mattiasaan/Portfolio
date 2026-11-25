@@ -62,9 +62,9 @@
 
 
   <body>
-    <div class="title-container">
+    <div class="title-container" id="top">
       <div class="title-text">
-        <h1 class="title">Ciao,sono <span class="span-title">Mattia</span></h1>
+        <h1 class="title">Ciao, sono <span class="span-title">Mattia</span></h1>
         <h2 class="title-sub">Full-Stack Dev</h2>
       </div>
       <div class="location">
@@ -204,14 +204,15 @@
       </a>
     </div>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h3 class="section-title">Conoscenze tecniche</h3>
       <div class="skills-grid" id="skills-grid"></div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h3 class="section-title">Progetti</h3>
       <div class="projects-grid" id="projects-grid"></div>
+      <div class="projects-dots" id="projects-dots" aria-hidden="true"></div>
       <div class="project-more"><p class="see-more-btn">mostra altro</p></div>
     </section>
 
@@ -249,6 +250,13 @@
         </div>
       </div>
     </section>
+    <nav class="mobile-nav" aria-label="Navigazione sezioni">
+      <a href="#top">Home</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Progetti</a>
+      <a href="#contact">Contatti</a>
+    </nav>
+
     <footer>
       <p>
         creato con il ♡ da me.<br />© 2025 Mattia Santomaso. Tutti i diritti

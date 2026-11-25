@@ -61,7 +61,7 @@
   </head>
 
   <body>
-    <div class="title-container">
+    <div class="title-container" id="top">
       <div class="title-text">
         <h1 class="title">Hi, I'm <span class="span-title">Mattia</span></h1>
         <h2 class="title-sub">Full-Stack Dev</h2>
@@ -202,14 +202,15 @@
       </a>
     </div>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h3 class="section-title">Knowledge Areas</h3>
       <div class="skills-grid" id="skills-grid"></div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h3 class="section-title">Projects</h3>
       <div class="projects-grid" id="projects-grid"></div>
+      <div class="projects-dots" id="projects-dots" aria-hidden="true"></div>
       <div class="project-more"><p class="see-more-btn">see more</p></div>
     </section>
 
@@ -250,6 +251,13 @@
         </div>
       </div>
     </section>
+    <nav class="mobile-nav" aria-label="Section navigation">
+      <a href="#top">Top</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <footer>
       <p>
         created with ♡ by me.<br />© 2025 Mattia Santomaso. All rights reserved.

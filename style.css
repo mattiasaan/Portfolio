@@ -607,3 +607,468 @@ footer {
   .title-text h1.title { font-size: 2.8em; }
   .title-text h2.title-sub { font-size: 2em; }
 }
+
+
+/* ======================================================================
+   MOBILE EXPERIENCE
+   Elementi aggiunti per il mobile: nascosti di default (desktop invariato)
+   ====================================================================== */
+.skills-tabs,
+.projects-dots,
+.mobile-nav {
+  display: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes mapIn {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    padding: 0 20px calc(90px + env(safe-area-inset-bottom));
+  }
+
+  /* ----------------------- HERO: la mappa di Bolzano come sfondo ----------------------- */
+  .title-container {
+    position: relative;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 -20px;
+    padding: 120px 20px 0;
+    /* taglia la mappa solo ai lati, così il cerchio resta intero in verticale */
+    overflow-x: clip;
+  }
+
+  .location-img {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    opacity: 0.3;
+    border: 1px solid rgba(237, 237, 237, 0.4);
+    z-index: -1;
+  }
+
+  .title-text {
+    margin-top: 0;
+  }
+
+  /* il titolo sta sempre su una riga: la dimensione segue la larghezza
+     dello schermo (Hack è monospace, ogni carattere ≈ 0.6em) */
+  .title-text h1.title {
+    font-size: clamp(1.5rem, calc((100vw - 40px) / 8.8), 3.4rem); /* 14 caratteri */
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  html:lang(it) .title-text h1.title {
+    font-size: clamp(1.4rem, calc((100vw - 40px) / 10.6), 3.4rem); /* 17 caratteri */
+  }
+
+  .title-text h2.title-sub {
+    font-size: clamp(1.5rem, 7vw, 2.3rem);
+    line-height: 1.2;
+    margin-top: 0.35rem;
+    color: var(--color-primary);
+  }
+
+  .location {
+    align-items: flex-start;
+    margin: 14px 0 0;
+  }
+
+  h5.location-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--color-primary);
+  }
+
+  .about-text {
+    max-width: 34em;
+    margin: 32px 0 0;
+    font-size: 0.92em;
+    line-height: 1.65;
+    color: rgba(237, 237, 237, 0.78);
+  }
+
+  /* ----------------------- BOTTONI: solo icona + testo ----------------------- */
+  .buttons-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    margin-top: 22px;
+  }
+
+  .download-btn,
+  .language-btn {
+    gap: 7px;
+    padding: 0.5rem 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .download-btn:hover,
+  .language-btn:hover {
+    text-decoration: none;
+  }
+
+  .buttons-container svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .buttons-container .texts {
+    display: flex;
+    margin: 0;
+  }
+
+  .buttons-container .text-1 {
+    display: none;
+  }
+
+  .buttons-container .text-2 {
+    margin: 0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    text-decoration-color: rgba(237, 237, 237, 0.3);
+    text-underline-offset: 4px;
+  }
+
+  .download-btn:active .text-2,
+  .language-btn:active .text-2 {
+    text-decoration-color: var(--color-accent);
+  }
+
+  /* ----------------------- TITOLI SEZIONE ----------------------- */
+  h3.section-title {
+    font-size: 1.55em;
+    padding-top: 72px;
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+  }
+
+  /* ----------------------- SKILLS: tab per categoria ----------------------- */
+  .skills-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin: 0 -20px 18px;
+    padding: 2px 20px;
+    scrollbar-width: none;
+  }
+
+  .skills-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .skills-tab {
+    flex: 0 0 auto;
+    font: inherit;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    color: var(--color-primary);
+    background: transparent;
+    border: 1px solid rgba(237, 237, 237, 0.15);
+    border-radius: 2rem;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .skills-tab-count {
+    margin-left: 0.45rem;
+    opacity: 0.55;
+  }
+
+  .skills-tab.is-active {
+    color: #fff;
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .skills .skills-grid {
+    display: block;
+    margin-top: 0;
+  }
+
+  .skills-group {
+    display: none;
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+
+  .skills-group.is-active {
+    display: block;
+    animation: fadeUp 0.3s ease;
+  }
+
+  .skills-group-title {
+    display: none;
+  }
+
+  /* ----------------------- PROGETTI: carosello ----------------------- */
+  .projects-grid.is-carousel {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 20px;
+    overscroll-behavior-x: contain;
+    margin: 0 -20px;
+    padding: 4px 20px 8px;
+    scrollbar-width: none;
+  }
+
+  .projects-grid.is-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .is-carousel .project-card {
+    flex: 0 0 86%;
+    min-height: 0;
+    padding: 1.25rem;
+    scroll-snap-align: start;
+  }
+
+  .is-carousel .project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .is-carousel .project-link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+  }
+
+  .is-carousel .project-title {
+    font-size: 1.25em;
+  }
+
+  .is-carousel .project-badge {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .is-carousel .project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.85em;
+    line-height: 1.55;
+  }
+
+  .is-carousel .tech-badge {
+    font-size: 0.72em;
+  }
+
+  .projects-dots {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 10px;
+  }
+
+  .projects-dot {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .projects-dot::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 99px;
+    background-color: rgba(237, 237, 237, 0.25);
+    transition: width 0.25s ease, background-color 0.25s ease;
+  }
+
+  .projects-dot.is-active::after {
+    width: 20px;
+    background-color: var(--color-accent);
+  }
+
+  .project-more {
+    display: none;
+  }
+
+  /* ----------------------- CONTATTI: righe, niente card ----------------------- */
+  .contact-item {
+    position: relative;
+    margin: 0;
+  }
+
+  .contact-content p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  .email-item > p {
+    color: var(--color-primary);
+  }
+
+  .email-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0 1rem;
+    border-bottom: 1px solid rgba(237, 237, 237, 0.12);
+  }
+
+  #email-text {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: clamp(0.85rem, 4.1vw, 1.05rem);
+    overflow-wrap: anywhere;
+  }
+
+  #copy-email {
+    flex-shrink: 0;
+    padding: 0.4rem 0;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    background: none;
+  }
+
+  #copy-email:hover {
+    background: none;
+  }
+
+  .contact-item:not(.email-item) p {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(237, 237, 237, 0.12);
+    color: var(--color-primary);
+    transition: background-color 0.15s ease;
+  }
+
+  .contact-item:not(.email-item):active p {
+    background-color: rgba(255, 61, 0, 0.08);
+  }
+
+  /* link sottolineato in arancione; tutta la riga è cliccabile */
+  .contact-item:not(.email-item) a.link {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .contact-item:not(.email-item) a.link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+
+  /* ----------------------- NAV FLOTTANTE ----------------------- */
+  .mobile-nav {
+    display: flex;
+    gap: 2px;
+    position: fixed;
+    left: 50%;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    z-index: 50;
+    padding: 5px;
+    border-radius: 99px;
+    background-color: rgba(26, 27, 30, 0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 140%);
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.35s ease;
+  }
+
+  .mobile-nav.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .mobile-nav a {
+    padding: 0.6rem 0.85rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-nav a.is-active {
+    color: #fff;
+    background-color: var(--color-accent);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+/* browser senza overflow: clip → evita lo scroll orizzontale */
+@supports not (overflow: clip) {
+  @media (max-width: 768px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  }
+}
+
+/* unico momento animato: la mappa appare al caricamento */
+@media (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .location-img {
+    animation: mapIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+}
