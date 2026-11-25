@@ -427,6 +427,10 @@ h3.section-title {
   text-decoration: none;
 }
 
+.project-card:has(.is-static) {
+  cursor: default;
+}
+
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;

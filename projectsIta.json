@@ -1,39 +1,83 @@
 [
-{
-  "name": "LANdesk",
-  "description": "LANdesk è una dashboard self-hosted e local-first per gestire la produttività personale. Offre un'interfaccia pulita per organizzare attività, note e file, il tutto eseguibile sul proprio computer o rete locale.",
-  "technologies": ["HTML", "CSS", "JavaScript", "PWA", "python", "FastAPI"],
-  "repository": "https://github.com/mattiasaan/LANdesk"
-},
-{
-  "name": "MoveGreen",
-  "description": "MoveGreen è un'app mobile completa progettata per promuovere la mobilità sostenibile. Permette agli utenti di monitorare attività ecologiche come camminare, andare in bicicletta o usare i mezzi pubblici, visualizzando il loro impatto positivo tramite il risparmio di CO₂ e un sistema di punti. </br></br> Con questa app ho partecipato al Premio Fabrizio Rocca 2025 e vinto il 1° premio",
-  "state": "new",
-  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render", "Figma"],
-  "repository": "https://github.com/mattiasaan/MoveGreen"
-},
-{
-  "name": "Grademate",
-  "description": "GradeMate è un'app mobile React Native pensata per aiutare gli studenti a monitorare i voti scolastici. Consente di salvare i voti localmente sul dispositivo e calcola automaticamente le medie in base alle regole di ponderazione della scuola Galileo Galilei.",
-  "technologies": ["React Native", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/GradeMate"
-},
-{
-  "name": "Robot per il torneo RoboCup",
-  "description": "Un progetto hardware e software sviluppato insieme al mio team per il torneo nazionale RoboCup Rescue Line, in cui nel 2024 abbiamo ottenuto il 7° posto su oltre 60 squadre a livello nazionale.",
-  "technologies": ["python", "opencv", "micropython", "arduino", "raspberryPI", "c++"],
-  "repository": "https://junior.robocup.org/rcj-rescue-line/"
-},
-{
-  "name": "FantaTerrorism",
-  "description": "Un gioco multiplayer in prima persona sviluppato con Unreal Engine, caratterizzato da uno stile grafico low-poly. Il progetto è attualmente in fase di sviluppo e si concentra sulle meccaniche di gameplay principali e sulle funzionalità multiplayer.",
-  "technologies": ["Unreal Engine", "c++"],
-  "repository": "https://www.unrealengine.com/en-US"
-},
-{
-  "name": "Portfolio",
-  "description": "Un sito web portfolio personale sviluppato per valorizzare i miei progetti, le mie competenze tecniche e la mia esperienza complessiva attraverso un design pulito e moderno.",
-  "technologies": ["HTML", "CSS", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/Portfolio"
-}
+  {
+    "name": "Skedoo",
+    "description": "Skedoo è una web app che riunisce orari scolastici, comunicazioni e modifiche giornaliere in un'unica app moderna per studenti e professori. Analizza il PDF dell'orario, legge le comunicazioni della bacheca ClasseViva (anche le immagini, tramite OCR) e confronta automaticamente le modifiche giornaliere con l'orario base, evidenziando entrate posticipate, uscite anticipate e cambi aula. Mostra inoltre voti, agenda e assenze di ClasseViva con notifiche push mirate, ed è self-hosted su Raspberry Pi con Docker.",
+    "state": "new",
+    "technologies": [
+      "React",
+      "Vite",
+      "python",
+      "FastAPI",
+      "PostgreSQL",
+      "JWT",
+      "OCR",
+      "Docker",
+      "raspberryPI"
+    ],
+    "repository": "https://github.com/mattiasaan/skedoo"
+  },
+  {
+    "name": "Registro Accessi",
+    "description": "Sistema web per la registrazione e gestione degli accessi a un edificio istituzionale, attualmente in uso presso la Stazione dei Carabinieri di Bolzano. Registra ingressi e uscite con dati anagrafici e documento d'identità, offre un archivio consultabile con lo storico completo di ogni persona e gestisce il registro autovetture del personale. Un pannello di amministrazione gestisce utenti, impostazioni di sicurezza, audit log e backup. Pensato per l'operatività h24, funziona interamente su rete LAN, senza dipendenze da cloud o Internet. </br></br>Progetto privato, codice sorgente non pubblico.",
+    "state": "new",
+    "technologies": [
+      "python",
+      "FastAPI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQLite"
+    ]
+  },
+  {
+    "name": "LANdesk",
+    "description": "LANdesk è una dashboard self-hosted e local-first per gestire la produttività personale. Offre un'interfaccia pulita per organizzare attività, note e file, il tutto eseguibile sul proprio computer o rete locale.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PWA",
+      "python",
+      "FastAPI"
+    ],
+    "repository": "https://github.com/mattiasaan/LANdesk"
+  },
+  {
+    "name": "MoveGreen",
+    "description": "MoveGreen è un'app mobile completa progettata per promuovere la mobilità sostenibile. Permette agli utenti di monitorare attività ecologiche come camminare, andare in bicicletta o usare i mezzi pubblici, visualizzando il loro impatto positivo tramite il risparmio di CO₂ e un sistema di punti. </br></br> Con questa app ho partecipato al Premio Fabrizio Rocca 2025 e vinto il 1° premio",
+    "technologies": [
+      "React Native",
+      "JavaScript",
+      "python",
+      "Fastapi",
+      "PostgreSQL",
+      "SQLite",
+      "Render",
+      "Figma"
+    ],
+    "repository": "https://github.com/mattiasaan/MoveGreen"
+  },
+  {
+    "name": "Robot per il torneo RoboCup",
+    "description": "Un progetto hardware e software sviluppato insieme al mio team per il torneo nazionale RoboCup Rescue Line, in cui nel 2024 abbiamo ottenuto il 7° posto su oltre 60 squadre a livello nazionale.",
+    "technologies": [
+      "python",
+      "opencv",
+      "micropython",
+      "arduino",
+      "raspberryPI",
+      "c++"
+    ],
+    "repository": "https://junior.robocup.org/rcj-rescue-line/"
+  },
+  {
+    "name": "Portfolio",
+    "description": "Un sito web portfolio personale sviluppato per valorizzare i miei progetti, le mie competenze tecniche e la mia esperienza complessiva attraverso un design pulito e moderno.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "repository": "https://github.com/mattiasaan/Portfolio"
+  }
 ]

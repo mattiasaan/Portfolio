@@ -99,16 +99,20 @@ fetch("projects.json")
         ${technologies.map((t) => `<span class="tech-badge">${t}</span>`).join("")}
       </div>`;
 
-    const renderProject = (project, index) => `
-      <a href="${project.repository}" target="_blank" class="project-link">
+    const renderProject = (project, index) => {
+      const content = `
         <h4 class="project-title">
           ${project.name}
           ${project.state === "new" ? '<span class="project-badge">NEW</span>' : ""}
         </h4>
         <p class="project-desc">${project.description}</p>
         ${renderTechnologies(project.technologies)}
-      </a>
-    `;
+      `;
+      // progetti senza repository pubblico: card non cliccabile
+      return project.repository
+        ? `<a href="${project.repository}" target="_blank" class="project-link">${content}</a>`
+        : `<div class="project-link is-static">${content}</div>`;
+    };
 
     const createCard = (project, index, ...classes) => {
       const card = document.createElement("div");

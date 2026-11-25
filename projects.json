@@ -1,39 +1,83 @@
 [
-{
-  "name": "LANdesk",
-  "description": "LANdesk is a self-hosted, local-first dashboard for managing personal productivity. It provides a clean interface to organize tasks, notes, and files, all running on your own machine or local network.",
-  "technologies": ["HTML", "CSS", "JavaScript", "PWA", "python", "FastAPI"],
-  "repository": "https://github.com/mattiasaan/LANdesk"
-},
-{
-  "name": "MoveGreen",
-  "description": "MoveGreen is a comprehensive mobile application designed to promote sustainable mobility. It empowers users to track their environmentally friendly activities, such as walking, biking, and using public transport, while visualizing their positive impact through CO₂ savings and a rewarding points system. </br></br>With this app, I participated in the Fabrizio Rocca Award 2025 and won 1st prize.",
-  "state": "new",
-  "technologies": ["React Native", "JavaScript", "python", "Fastapi", "PostgreSQL", "SQLite", "Render", "Figma"],
-  "repository": "https://github.com/mattiasaan/MoveGreen"
-},
-{
-  "name": "Grademate",
-  "description": "GradeMate is a React Native mobile application designed to help students track their school grades. It provides an easy and secure way to save grades locally on your device and automatically calculates averages based on the specific weighting rules used by the Galileo Galilei school.",
-  "technologies": ["React Native", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/GradeMate"
-},
-{
-  "name": "Robocup tournament robot",
-  "description": "A hardware and software project developed with my team for the RoboCup Rescue Line national tournament, where in 2024 we earned 7th place out of more than 60 teams nationwide.",
-  "technologies": ["python", "opencv", "micropython", "arduino", "raspberryPI", "c++"],
-  "repository": "https://junior.robocup.org/rcj-rescue-line/"
-},
-{
-  "name": "FantaTerrorism",
-  "description": "A first-person multiplayer game developed in a low-poly art style using Unreal Engine. The project is currently in development and focuses on core gameplay mechanics and multiplayer features.",
-  "technologies": ["Unreal Engine", "c++"],
-  "repository": "https://www.unrealengine.com/en-US"
-},
-{
-  "name": "Portfolio Website",
-  "description": "A personal portfolio website developed to highlight my projects, technical skills, and overall experience through a clean and modern design.",
-  "technologies": ["HTML", "CSS", "JavaScript"],
-  "repository": "https://github.com/mattiasaan/Portfolio"
-}
+  {
+    "name": "Skedoo",
+    "description": "Skedoo is a web app that brings school timetables, announcements and daily changes together in a single modern app for students and teachers. It parses the timetable PDF, reads ClasseViva notice-board posts (images included, via OCR) and automatically compares daily changes with the standard schedule, highlighting late entries, early exits and room changes. It also shows grades, agenda and absences from ClasseViva, with targeted push notifications, and runs self-hosted on a Raspberry Pi with Docker.",
+    "state": "new",
+    "technologies": [
+      "React",
+      "Vite",
+      "python",
+      "FastAPI",
+      "PostgreSQL",
+      "JWT",
+      "OCR",
+      "Docker",
+      "raspberryPI"
+    ],
+    "repository": "https://github.com/mattiasaan/skedoo"
+  },
+  {
+    "name": "Registro Accessi",
+    "description": "A web-based access control system for an institutional building, currently in use at the Carabinieri station in Bolzano. It records entries and exits with personal and ID document data, keeps a searchable archive with each person's full access history and manages the staff vehicle register. An admin panel handles users, security settings, audit log and backups. Built for 24/7 operation, it runs entirely on the local network with no cloud or Internet dependencies. </br></br>Private project, source code not publicly available.",
+    "state": "new",
+    "technologies": [
+      "python",
+      "FastAPI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQLite"
+    ]
+  },
+  {
+    "name": "LANdesk",
+    "description": "LANdesk is a self-hosted, local-first dashboard for managing personal productivity. It provides a clean interface to organize tasks, notes, and files, all running on your own machine or local network.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PWA",
+      "python",
+      "FastAPI"
+    ],
+    "repository": "https://github.com/mattiasaan/LANdesk"
+  },
+  {
+    "name": "MoveGreen",
+    "description": "MoveGreen is a comprehensive mobile application designed to promote sustainable mobility. It empowers users to track their environmentally friendly activities, such as walking, biking, and using public transport, while visualizing their positive impact through CO₂ savings and a rewarding points system. </br></br>With this app, I participated in the Fabrizio Rocca Award 2025 and won 1st prize.",
+    "technologies": [
+      "React Native",
+      "JavaScript",
+      "python",
+      "Fastapi",
+      "PostgreSQL",
+      "SQLite",
+      "Render",
+      "Figma"
+    ],
+    "repository": "https://github.com/mattiasaan/MoveGreen"
+  },
+  {
+    "name": "Robocup tournament robot",
+    "description": "A hardware and software project developed with my team for the RoboCup Rescue Line national tournament, where in 2024 we earned 7th place out of more than 60 teams nationwide.",
+    "technologies": [
+      "python",
+      "opencv",
+      "micropython",
+      "arduino",
+      "raspberryPI",
+      "c++"
+    ],
+    "repository": "https://junior.robocup.org/rcj-rescue-line/"
+  },
+  {
+    "name": "Portfolio Website",
+    "description": "A personal portfolio website developed to highlight my projects, technical skills, and overall experience through a clean and modern design.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "repository": "https://github.com/mattiasaan/Portfolio"
+  }
 ]
